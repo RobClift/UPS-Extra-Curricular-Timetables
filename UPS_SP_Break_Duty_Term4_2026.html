@@ -34,10 +34,22 @@ td:last-child{border-right:none}
 .closed{color:#94a3b8;font-style:italic}
 .gravel{color:#64748b;font-size:12px}
 </style>
+<style>
+.back-bar{position:sticky;top:0;z-index:999;background:#1e2573;padding:10px 20px}
+.back-bar a{color:rgba(255,255,255,0.85);font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.back-bar a:hover{color:#fff}
+.back-bar a::before{content:"\2190";font-size:15px;margin-right:2px}
+</style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e2573">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon.svg">
 </head>
 <body>
+<div class="back-bar"><a href="index.html">Back to Timetables</a></div>
+
 <header>
-  <a href="index.html">← Back to Timetables</a>
   <h1>SP Break Duty List – Term 4 2026</h1>
   <p>Mon–Thu: Bottom/Top Field + Forest/Gravel &nbsp;·&nbsp; Friday: Quad/Bottom + Gravel</p>
 </header>

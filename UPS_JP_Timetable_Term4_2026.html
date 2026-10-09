@@ -107,8 +107,21 @@
     .legend { display: none; }
   }
 </style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e2573">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <style>
+  .back-bar{position:sticky;top:0;z-index:999;background:linear-gradient(90deg,#161c5c,#1e2573);padding:10px 20px;display:flex;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.25)}
+  .back-bar a{color:#fff;font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.12);padding:7px 16px;border-radius:20px;border:1px solid rgba(255,255,255,0.2);transition:background .15s}
+  .back-bar a:hover{background:rgba(255,255,255,0.22)}
+  .back-bar a::before{content:"\2190";font-size:16px}
+  .back-bar .site-name{margin-left:auto;color:rgba(255,255,255,0.5);font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+  </style>
 </head>
 <body>
+<div class="back-bar"><a href="index.html">Back to Timetables</a><span class="site-name">UPS</span></div>
 
 <header class="header">
   <div class="header-inner">
